@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: superduperhiperpasswordsecretuncover
+      MYSQL_DATABASE: app
+      MYSQL_USER: crackme
+      MYSQL_PASSWORD: thisisacrackablepassword_orno?
+    volumes:
+      - ./database/app.sql:/docker-entrypoint-initdb.d/app.sql
+    ports:
+      - "127.0.0.1:3306:3306"
+  web:
+    build: . 
+    container_name: uam
+    restart: always
+    ports:
+      - "35000:3000"
+    links:
+      - db
+    depends_on:
+      - db
+    command: python3 -m flask run --host=0.0.0.0 --port=3000

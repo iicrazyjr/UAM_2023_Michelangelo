@@ -1,0 +1,14 @@
+<table id="data">
+    <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Población</th>
+    </tr>
+    {% for item in data %}
+    <tr>
+        <td>{{item[2]}}</td>
+        <td>{{item[1]}}</td>
+        <td>{{item[4]}}</td>
+    </tr>
+    {% endfor %}
+</table>

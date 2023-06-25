@@ -1,0 +1,96 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilo de formulario */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    background-color: #555;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type='submit'] {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    border: none;
+    /* Borde sin estilo */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin decoración de texto */
+    display: inline-block;
+    /* Mostrar como elemento en línea */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar por encima */
+    border-radius: 8px;
+    /* Radio de los bordes */
+    box-shadow: 2px 2px #888888;
+    /* Sombra */
+}
+
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
